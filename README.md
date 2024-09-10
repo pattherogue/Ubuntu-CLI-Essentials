@@ -1,4 +1,4 @@
-# Write-up: Ubuntu Linux Command-Line Exploration
+# Ubuntu Linux Command-Line Exploration
 
 ## Table of Contents
 - [Project Overview](#project-overview)
