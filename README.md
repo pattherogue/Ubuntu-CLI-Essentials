@@ -1,4 +1,4 @@
-# Ubuntu Linux Command-Line Exploration
+# Write-up: Ubuntu Linux Command-Line Exploration
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -11,7 +11,7 @@
 
 ## Project Overview
 
-This project demonstrates proficiency in Ubuntu Linux command-line operations, focusing on file manipulation, text processing, and I/O redirection. It showcases fundamental skills essential for efficient system administration and shell scripting in an Ubuntu environment.
+This write-up documents a project demonstrating proficiency in Ubuntu Linux command-line operations, focusing on file manipulation, text processing, and I/O redirection. It showcases fundamental skills essential for efficient system administration and shell scripting in an Ubuntu environment.
 
 ## Objectives
 
