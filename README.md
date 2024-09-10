@@ -1,4 +1,4 @@
-# Ubuntu Linux Command-Line Exploration
+# Ubuntu-CLI-Essentials
 
 ## Table of Contents
 - [Project Overview](#project-overview)
