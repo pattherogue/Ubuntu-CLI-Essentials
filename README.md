@@ -1,19 +1,17 @@
-# Ubuntu Linux Command-Line Writeup
+# Ubuntu Linux Command-Line Exploration
 
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Objectives](#objectives)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Key Commands and Concepts](#key-commands-and-concepts)
+- [Visual Demonstrations](#visual-demonstrations)
 - [Key Learnings](#key-learnings)
 - [Practical Applications](#practical-applications)
 - [Future Work](#future-work)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
-This writeup demonstrates proficiency in Ubuntu Linux command-line operations, focusing on file manipulation, text processing, and I/O redirection. Through a series of practical commands, it showcases fundamental skills essential for efficient system administration and shell scripting in an Ubuntu environment.
+This project demonstrates proficiency in Ubuntu Linux command-line operations, focusing on file manipulation, text processing, and I/O redirection. It showcases fundamental skills essential for efficient system administration and shell scripting in an Ubuntu environment.
 
 ## Objectives
 
@@ -23,63 +21,65 @@ This writeup demonstrates proficiency in Ubuntu Linux command-line operations, f
 - Combine commands using pipes for complex operations
 - Practice error handling and output management
 
-## Installation
+## Key Commands and Concepts
 
-This project doesn't require any special installation. Ensure you have access to an Ubuntu Linux terminal.
-
-## Usage
-
-Here's a step-by-step guide to recreate the project:
-
-1. Create a new directory and navigate into it:
+1. Directory and File Management:
    ```bash
    mkdir test
    cd test
-   ```
-
-2. Create sample files:
-   ```bash
    touch barry.txt bob example.png firstfile fool video.mpeg
+   ls
    ```
 
-3. List and redirect output:
+2. Output Redirection:
    ```bash
    ls > myoutput
    cat myoutput
    ```
 
-4. Manipulate file content:
+3. File Content Manipulation:
    ```bash
    wc -l myoutput > myoutput
-   cat myoutput
-   ```
-
-5. Append output:
-   ```bash
    wc -l barry.txt >> myoutput
-   ls >> myoutput
    ```
 
-6. Use input redirection:
+4. Input Redirection:
    ```bash
    wc -l < myoutput
-   wc -l < barry.txt > myoutput
    ```
 
-7. Redirect error output:
+5. Error Redirection:
    ```bash
    ls video.mpeg blah.foo 2> errors.txt
    ```
 
-8. Combine output redirection:
-   ```bash
-   ls video.mpeg blah.foo > myoutput 2>&1
-   ```
-
-9. Use command piping:
+6. Command Piping:
    ```bash
    ls | head -5 | tail -2 > directory.txt
    ```
+
+## Visual Demonstrations
+
+### 1. File Creation and Listing
+
+![File Creation and Listing](https://i.imgur.com/t1kNto5.png)
+*Creating sample files and listing directory contents*
+
+This screenshot demonstrates the creation of multiple files with various extensions and the use of the `ls` command to verify file creation.
+
+### 2. Output Redirection and Content Display
+
+![Output Redirection](https://i.imgur.com/azZBioW.png)
+*Redirecting ls output to a file and displaying its contents*
+
+This image shows how to redirect the output of a command to a file using `>` and then display the contents of that file using `cat`.
+
+### 3. Command Piping and Complex Operations
+
+![Command Piping](https://i.imgur.com/fZPuYUS.png)
+*Using pipes to process command output*
+
+This screenshot illustrates the use of multiple pipes to filter and process command output, demonstrating more advanced command-line techniques.
 
 ## Key Learnings
 
@@ -106,11 +106,3 @@ To expand on this project, consider:
 - Developing Bash shell scripts to automate repetitive tasks
 - Integrating version control using Git on Ubuntu
 - Investigating Ubuntu-specific system monitoring and performance analysis commands
-
-## Contributing
-
-Contributions to expand this project are welcome. Please feel free to fork, modify, and make pull requests.
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
